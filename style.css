@@ -3,20 +3,30 @@ html {
 }
 
 body{
+    padding-top: 80px;
     margin: 0;
     background-color: #efefef;
 }
 
-header{
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: #354552;
     color: white;
-    padding: 3rem 2rem
+    padding: 1rem 2rem; /* Ajustado de 3rem a 1rem */
+    height: auto; /* Cambiado de 20px a auto */
+    box-sizing: border-box; /* Añadido para incluir padding en la altura total */
 }
 
-header h1{
-    font-size: 4rem;
+header h1 {
+    font-size: 2rem;
     text-align: center;
+    margin: 0; /* Añadido para eliminar el margen predeterminado */
 }
+
 .container{
     width: 400px;
     margin: 0 auto;
