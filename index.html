@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html >
+<html lang="es">
 <head>
-    <title>Document</title>
     
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body id="Titulo">
-    <header >
-        <h1 ></h1>
-        <h1 >Blog de Pablo</h1>
+    <header>
+        <h1>Mi Blog</h1>
     </header>
-    
     <section class="container">
         <article  class="post">
             <h2 >Titulo de mi post</h2>
@@ -30,12 +28,29 @@
         </article>
         <article class="post">
             <h2>Titulo de mi post 3</h2>
-        <p>Descripcion de mi post 3</p>
-        <img src="img/nakama.jpg" width="400"/>
-        <p>Texto del articulo que hay aca y es prueba</p>
+            <p>Descripcion de mi post 3</p>
+            <img src="img/nakama.jpg" width="400"/>
+            <p>Texto del articulo que hay aca y es prueba</p>
         </article>
-        
-    </article>
+        <article>
+            <div class="interactions">
+                <button class="like-button">❤️ 0</button>
+            </div>
+        </article>
+        <section id="comments">
+            <h3>Comentarios</h3>
+            <form id="commentForm">
+                <textarea placeholder="Escribe tu comentario aquí" required></textarea>
+                <button type="submit">Enviar Comentario</button>
+            </form>
+            <div class="comment-list">
+                <div class="comment">
+                    <p>Este es un comentario de ejemplo.</p>
+                </div>
+                <div class="comment">
+                    <p>Aquí hay otro comentario de muestra.</p>
+                </div>
+            </div>
     </section>
     <footer>
         <section>
@@ -45,5 +60,7 @@
         
         <p>copyright 2024</p>
     </footer>
+
+   
 </body>
 </html>
